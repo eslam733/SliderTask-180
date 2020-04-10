@@ -1,0 +1,70 @@
+body{
+    background-color: #f5f5f5;
+}
+
+.slider{
+    position: relative;
+    margin: 50px auto;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 4px 14px 4px #CCC;
+}
+
+.forward{
+    position: absolute;
+    right: -46px;
+    top: 50%;
+    transform: translateY(-40px);
+    font-size: 37px;
+}
+
+.backward{
+    position: absolute;
+    left: -46px;
+    top: 50%;
+    transform: translateY(-40px);
+    font-size: 37px;
+}
+
+.backward:hover,
+.forward:hover{
+    cursor: pointer;
+}
+
+.SliderImg{
+    transition: opacity .5s;
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/img1.png");
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+.active{
+    color: #b1acac !important;
+}
+
+.bound{
+    transition: all .5s;
+    position: relative;
+    color: #e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bounds{
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.bound:hover{
+    color: #9c9c9c;
+}
+
+.bound span{
+    position: absolute;
+    color: #000;
+    left: 5px;
+}
